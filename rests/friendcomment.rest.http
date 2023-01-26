@@ -1,0 +1,79 @@
+### get a default category
+
+GET   http://localhost:8080/friendcomment
+content-type: application/json 
+
+### add a  category
+
+POST   http://localhost:8080/friendcomment
+content-type: application/json
+
+{
+    "_idPost": "1",
+    "_idUser": "0123456789",
+    "name": "Nguyễn Thanh Trúc",
+    "img": "https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/michael-dam-mEZ3PoFGs_k-unsplash.jpg?alt=media&token=1f6e25a3-9158-4a36-bef9-2a43c48a12a0",
+    "timeComment": "9 giờ",
+    "content": "Vào rạng sáng nay",
+    "sticker": {
+        "dynamic": true,
+        "title": "Nhãn dán QooBee Agapi Angry, dragon with crossed arms",
+        "img": "https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.1997-6/68277375_2419773764924732_2269613864855273472_n.png?stp=dst-png_p240x240&_nc_cat=1&ccb=1-7&_nc_sid=0572db&_nc_ohc=I2eEBjHnkPoAX9WYJg0&_nc_oc=AQkYwQfBI5Mnb-6ORNsP7faNxhG7qclQIXUonwQ0iGIzzOzcdCT3q461hAqsRSpb7R8&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfB8r4tVnHLYaTY8cvmY5RHdbUWz0XlrnOgi1uzKW9Mx8Q&oe=63BD9271",
+        "size": {
+            "width": 240,
+            "height": 240
+        },
+        "frame": 8,
+        "x": 3,
+        "y": 3
+    },
+    "video": "",
+    "gif": "",
+    "reply": [
+        {
+            "_id": "1-1",
+            "_idUser": "01234567891",
+            "name": "Ng.Trần Lê ",
+            "img": "https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/michael-dam-mEZ3PoFGs_k-unsplash.jpg?alt=media&token=1f6e25a3-9158-4a36-bef9-2a43c48a12a0",
+            "timeComment": "9 giờ",
+            "content": "Vào rạng sáng nay, Apple không thèm phát hành ",
+            "reply": [
+                {
+                    "_id": "1-1-1",
+                    "_idUser": "01234567891",
+                    "name": "Ng.Trần Lê Dương",
+                    "img": "https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/michael-dam-mEZ3PoFGs_k-unsplash.jpg?alt=media&token=1f6e25a3-9158-4a36-bef9-2a43c48a12a0",
+                    "timeComment": "9 giờ",
+                    "content": "Vào rạng sáng nay",
+                    "reply": [
+                        {
+                            "_id": "1-1-1-1",
+                            "_idUser": "01234567891",
+                            "name": "Ng.Trần Lê Dương",
+                            "img": "https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/michael-dam-mEZ3PoFGs_k-unsplash.jpg?alt=media&token=1f6e25a3-9158-4a36-bef9-2a43c48a12a0",
+                            "timeComment": "9 giờ",
+                            "content": "Vào rạng sáng nay"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "_id": "1-2",
+            "_idUser": "01234567891",
+            "name": "Ng.Trần Lê Ba",
+            "img": "https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/michael-dam-mEZ3PoFGs_k-unsplash.jpg?alt=media&token=1f6e25a3-9158-4a36-bef9-2a43c48a12a0",
+            "timeComment": "9 giờ",
+            "content": "Vào rạng sáng nay"
+        }
+    ]
+}
+
+### delete a category
+
+DELETE    http://localhost:8080/friendcomment
+content-type: application/json
+
+{
+    "id" : "62c70a924df41f5f5f82e1a8"
+}
