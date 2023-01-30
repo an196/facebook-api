@@ -1,9 +1,14 @@
-### get a default category
+### get a default friendcomment
 
 GET   http://localhost:8080/friendcomment
 content-type: application/json 
 
-### add a  category
+
+### get a default friendcomment
+
+GET   https://facebook-api-psz5.onrender.com/friendcomment
+content-type: application/json 
+### add a  friendcomment
 
 POST   http://localhost:8080/friendcomment
 content-type: application/json

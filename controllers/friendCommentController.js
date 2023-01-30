@@ -11,7 +11,10 @@ const addFriendComment = async (req, res) => {
    
     try {
         const savedFriendComment = await newFriendComment.save();
-        res.status(200).json(savedFriendComment);
+        
+        res
+            .setHeader("Access-Control-Allow-Origin", "*")
+            .status(200).json(savedFriendComment);
     } catch (err) {
         res.status(500).json(err);
     }
