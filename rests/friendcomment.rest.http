@@ -8,6 +8,7 @@ content-type: application/json
 
 GET   https://facebook-api-psz5.onrender.com/friendcomment
 content-type: application/json 
+
 ### add a  friendcomment
 
 POST   http://localhost:8080/friendcomment
@@ -23,7 +24,7 @@ content-type: application/json
     "sticker": {
         "dynamic": true,
         "title": "Nhãn dán QooBee Agapi Angry, dragon with crossed arms",
-        "img": "https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.1997-6/68277375_2419773764924732_2269613864855273472_n.png?stp=dst-png_p240x240&_nc_cat=1&ccb=1-7&_nc_sid=0572db&_nc_ohc=I2eEBjHnkPoAX9WYJg0&_nc_oc=AQkYwQfBI5Mnb-6ORNsP7faNxhG7qclQIXUonwQ0iGIzzOzcdCT3q461hAqsRSpb7R8&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfB8r4tVnHLYaTY8cvmY5RHdbUWz0XlrnOgi1uzKW9Mx8Q&oe=63BD9271",
+        "img": "https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/sticker_fullsize%2F68277375_2419773764924732_2269613864855273472_n.png?alt=media&token=cc89e732-d668-4d8b-92c3-9efb0ae8356d",
         "size": {
             "width": 240,
             "height": 240
