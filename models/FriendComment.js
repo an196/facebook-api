@@ -10,11 +10,11 @@ const friendCommentSchema = new Schema({
         type: String,
         require: true,
     },
-    _username:{
+    username:{
         type: String,
         require: true,
     },
-    _imgProfile:{
+    imgProfile:{
         type: String,
         require: true,
     },

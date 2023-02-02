@@ -11,14 +11,14 @@ content-type: application/json
 
 ### add a  friendcomment
 
-POST   http://localhost:8080/friendcomment
+POST  http://localhost:8080/friendcomment
 content-type: application/json
 
 {
     "_idPost": "1",
     "_idUser": "0123456789",
-    "name": "Nguyễn Thanh Trúc",
-    "img": "https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/michael-dam-mEZ3PoFGs_k-unsplash.jpg?alt=media&token=1f6e25a3-9158-4a36-bef9-2a43c48a12a0",
+    "imgProfile": "https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/michael-dam-mEZ3PoFGs_k-unsplash.jpg?alt=media&token=1f6e25a3-9158-4a36-bef9-2a43c48a12a0",
+    "username": "Nguyễn Thanh Trúc",
     "timeComment": "9 giờ",
     "content": "Vào rạng sáng nay",
     "sticker": {
@@ -39,24 +39,24 @@ content-type: application/json
         {
             "_id": "1-1",
             "_idUser": "01234567891",
-            "name": "Ng.Trần Lê ",
-            "img": "https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/michael-dam-mEZ3PoFGs_k-unsplash.jpg?alt=media&token=1f6e25a3-9158-4a36-bef9-2a43c48a12a0",
+            "username": "Ng.Trần Lê ",
+            "imgProfile": "https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/michael-dam-mEZ3PoFGs_k-unsplash.jpg?alt=media&token=1f6e25a3-9158-4a36-bef9-2a43c48a12a0",
             "timeComment": "9 giờ",
             "content": "Vào rạng sáng nay, Apple không thèm phát hành ",
             "reply": [
                 {
                     "_id": "1-1-1",
                     "_idUser": "01234567891",
-                    "name": "Ng.Trần Lê Dương",
-                    "img": "https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/michael-dam-mEZ3PoFGs_k-unsplash.jpg?alt=media&token=1f6e25a3-9158-4a36-bef9-2a43c48a12a0",
+                    "username": "Ng.Trần Lê Dương",
+                    "imgProfile": "https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/michael-dam-mEZ3PoFGs_k-unsplash.jpg?alt=media&token=1f6e25a3-9158-4a36-bef9-2a43c48a12a0",
                     "timeComment": "9 giờ",
                     "content": "Vào rạng sáng nay",
                     "reply": [
                         {
                             "_id": "1-1-1-1",
                             "_idUser": "01234567891",
-                            "name": "Ng.Trần Lê Dương",
-                            "img": "https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/michael-dam-mEZ3PoFGs_k-unsplash.jpg?alt=media&token=1f6e25a3-9158-4a36-bef9-2a43c48a12a0",
+                            "username": "Ng.Trần Lê Dương",
+                            "imgProfile": "https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/michael-dam-mEZ3PoFGs_k-unsplash.jpg?alt=media&token=1f6e25a3-9158-4a36-bef9-2a43c48a12a0",
                             "timeComment": "9 giờ",
                             "content": "Vào rạng sáng nay"
                         }
@@ -67,15 +67,53 @@ content-type: application/json
         {
             "_id": "1-2",
             "_idUser": "01234567891",
-            "name": "Ng.Trần Lê Ba",
-            "img": "https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/michael-dam-mEZ3PoFGs_k-unsplash.jpg?alt=media&token=1f6e25a3-9158-4a36-bef9-2a43c48a12a0",
+            "username": "Ng.Trần Lê Ba",
+            "imgProfile": "https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/michael-dam-mEZ3PoFGs_k-unsplash.jpg?alt=media&token=1f6e25a3-9158-4a36-bef9-2a43c48a12a0",
             "timeComment": "9 giờ",
             "content": "Vào rạng sáng nay"
         }
     ]
 }
 
-### delete a category
+### add a  friendcomment
+
+POST   http://localhost:8080/friendcomment
+content-type: application/json
+
+{
+    "_idPost": "1",
+    "_idUser": "0123456789",
+    "username": "Nguyễn Thanh Trúc Mi",
+    "imgProfile": "https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/michael-dam-mEZ3PoFGs_k-unsplash.jpg?alt=media&token=1f6e25a3-9158-4a36-bef9-2a43c48a12a0",
+    "timeComment": "9 giờ",
+    "content": "Vào rạng sáng nay",
+    "sticker": {
+        "dynamic": true,
+        "title": "Nhãn dán QooBee Agapi Angry, dragon with crossed arms",
+        "img": "https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/sticker_fullsize%2F68277375_2419773764924732_2269613864855273472_n.png?alt=media&token=cc89e732-d668-4d8b-92c3-9efb0ae8356d",
+        "size": {
+            "width": 240,
+            "height": 240
+        },
+        "frame": 8,
+        "x": 3,
+        "y": 3
+    },
+    "video": "",
+    "gif": "",
+    "reply": [
+        {
+            "_id": "2-1",
+            "_idUser": "01234567891",
+            "username": "Ng.Trần Lê Nam",
+            "imgProfile": "https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/michael-dam-mEZ3PoFGs_k-unsplash.jpg?alt=media&token=1f6e25a3-9158-4a36-bef9-2a43c48a12a0",
+            "timeComment": "9 giờ",
+            "content": "Vào rạng sáng nay, Apple không thèm phát hành "
+        }
+    ]
+}
+
+### delete a friendcomment
 
 DELETE    http://localhost:8080/friendcomment
 content-type: application/json
